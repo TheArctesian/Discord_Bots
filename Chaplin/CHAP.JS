@@ -1,7 +1,8 @@
+import { token } from 'config.js';
 const Discord = require("discord.js");
 const client = new Discord.Client(); 
 
-client.login("OTA3OTg2NDg2NTU5OTAzNzc2.YYvKTw.xkmeR5T79AzwaX_KaUNOrqPxNvA");
+client.login(token);
 client.on("message", (message)){ // EventEmitter
 let channel = message.guild.channels.cache.get(channelid); //need to find still
 	if(message.content == "!ping"){ // Check if message is "!ping"
